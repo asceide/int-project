@@ -137,7 +137,7 @@ void buy_pass(struct Passenger *user){
 }
 //Compliant RNG Generator. Although to be honest I am not to sure about the Windows version I have never used it before and the resources online were pretty scarce as to how exactly it works.
 int get_id(){
-    #if __unix
+#ifdef __unix
     struct timespec ts;
     if(timespec_get(&ts, TIME_UTC)==0){
         return 1;
@@ -145,9 +145,9 @@ int get_id(){
     srandom(ts.tv_nsec ^ ts.tv_sec);
     int r=random()%10+1;
     return r;
-    #endif
+#endif
 
-    #ifdef _WIN32
+#ifdef _WIN32
     BCRYPT_ALG_HANDLE Prov;
     int Buffer;
     if (!BCRYPT_SUCCESS(BCryptOpenAlgorithmProvider(&Prov, BCRYPT_RNG_ALGORITHM, NULL, 0))){
@@ -159,7 +159,7 @@ int get_id(){
     }
     BCryptCloseAlgorithmProvider(Prov, 0);
     return Buffer%10+1;
-    #endif
+#endif
 
 }
 
