@@ -1,5 +1,5 @@
 #ifndef USING_H //Guard for header file.
-#define USING_H_
+#define USING_H
 
 
 void using_choice_error(char* userChoice, long* choice, size_t size, int errorType, double* prices);

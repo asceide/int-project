@@ -1,9 +1,14 @@
+/*
+    Author: Patrick Alarcon
+    This program is used to load and get prices and discounts located within various files
+*/
+
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
 #include <stdbool.h>
 #include <ctype.h>
-#include <stdint.h>
 #include <string.h>
 
 void get_monthly_prices(double* m_prices, char* filename);

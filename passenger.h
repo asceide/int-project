@@ -1,5 +1,5 @@
 #ifndef PASSENGER_H //Guard for header file.
-#define PASSENGER_H_
+#define PASSENGER_H
 
 struct Passenger{   //Passenger struct
     int passenger_id;

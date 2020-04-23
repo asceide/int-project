@@ -1,5 +1,5 @@
-#ifndef LOADPRICES_H_
-#define LOADPRICES_H_
+#ifndef LOADPRICES_H
+#define LOADPRICES_H
 
 void get_monthly_prices(double* m_prices, char* filename);
 void get_discounts(double* d_prices, char* filename);
