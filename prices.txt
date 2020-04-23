@@ -1,0 +1,4 @@
+Bus 0.50
+Subway 1.50
+Commuter 1.00
+Special 0.50

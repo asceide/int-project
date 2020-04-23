@@ -1,0 +1,2 @@
+Student .5
+Elderly .5
